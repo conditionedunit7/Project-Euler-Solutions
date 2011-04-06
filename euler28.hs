@@ -19,7 +19,7 @@ getSpiral len = buildSpiral [[1]] [2..(len * len)]
 buildSpiral :: (Integral a) => [[a]] -> [a] -> [[a]]
 --Given a matrix and a list of numbers, add those numbers to the matrix in a 
 --spiral pattern, going counterclockwise. This can be converted to a clockwise-
---building matrix as specified by the problem by doing a map of the transform 
+--building matrix as specified by the problem by doing a map of the reverse 
 --method, but it's not necessary since the diagonals of odd-sided matrices will 
 --be the same. The matrix won't necessarily be square if the list of numbers is 
 --the wrong length.
